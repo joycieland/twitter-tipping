@@ -64,7 +64,7 @@ export function TransferFunds({ recipientWallet, tipAmount, onTransferComplete }
         throw new Error('No transaction hash received');
       }
       
-      const explorerLink = `https://solscan.io/tx/${txnHash}?cluster=devnet`;
+      const explorerLink = `https://solscan.io/tx/${txnHash}`;
       setTxnHash(explorerLink);
       
       if (onTransferComplete) {

@@ -83,7 +83,7 @@ export function TippingForm() {
         throw new Error('No transaction hash received');
       }
       
-      const link = `https://solscan.io/tx/${txnHash}?cluster=devnet`;
+              const link = `https://solscan.io/tx/${txnHash}`;
       setExplorerLink(link);
       
       setSuccess(`Successfully tipped ${tipAmount} SOL to @${cleanUsername}!`);
