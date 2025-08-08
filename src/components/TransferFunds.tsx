@@ -146,7 +146,7 @@ export function TransferFunds({ recipientWallet, tipAmount, onTransferComplete }
       </div>
 
       <div className="mt-4 text-gray-500 text-xs">
-        <p>• This will transfer {tipAmount} SOL to the Twitter user's wallet</p>
+        <p>• This will transfer {tipAmount} SOL to the Twitter user&apos;s wallet</p>
         <p>• Transaction will be visible on Solana blockchain</p>
         <p>• You can view the transaction on Solscan</p>
       </div>

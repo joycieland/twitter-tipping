@@ -70,7 +70,7 @@ export function TippingForm() {
       let txnHash = typeof txn === 'string' ? txn : txn.hash || txn.transactionId;
       
       if (!txnHash && typeof txn === 'object') {
-        for (const [key, value] of Object.entries(txn)) {
+        for (const [, value] of Object.entries(txn)) {
           if (typeof value === 'string' && value.length > 40) {
             txnHash = value;
             break;
@@ -239,7 +239,7 @@ export function TippingForm() {
             <div className="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center mt-0.5">
               <span className="text-blue-600 text-xs">✓</span>
             </div>
-            <p>We'll check if a wallet exists or create one for this Twitter account</p>
+            <p>We&apos;ll check if a wallet exists or create one for this Twitter account</p>
           </div>
           <div className="flex items-start gap-2">
             <div className="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center mt-0.5">
@@ -251,7 +251,7 @@ export function TippingForm() {
             <div className="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center mt-0.5">
               <span className="text-blue-600 text-xs">✓</span>
             </div>
-            <p>Uses Crossmint's server API for secure wallet creation</p>
+            <p>Uses Crossmint&apos;s server API for secure wallet creation</p>
           </div>
         </div>
       </div>
