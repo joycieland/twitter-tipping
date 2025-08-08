@@ -43,7 +43,7 @@ export function TransferFunds({ recipientWallet, tipAmount, onTransferComplete }
       console.log("Transaction keys:", Object.keys(txn));
       
       // Handle both string and object responses
-      let txnHash = typeof txn === 'string' ? txn : txn.hash || txn.transactionHash || txn.txHash || txn.signature;
+      let txnHash = typeof txn === 'string' ? txn : txn.hash || txn.transactionId;
       
       // If still no hash, try to stringify and extract from the object
       if (!txnHash && typeof txn === 'object') {
