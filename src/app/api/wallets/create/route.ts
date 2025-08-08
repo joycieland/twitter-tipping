@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create a Solana smart wallet using Crossmint's server API
-    const response = await fetch('https://staging.crossmint.com/api/2025-06-09/wallets', {
+    const response = await fetch('https://www.crossmint.com/api/2025-06-09/wallets', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
