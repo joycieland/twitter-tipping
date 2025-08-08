@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 interface USDCToSOLConverterProps {
   onAmountChange: (solAmount: string) => void;
@@ -118,7 +118,7 @@ export function USDCToSOLConverter({ onAmountChange, className = "" }: USDCToSOL
       
       {!isExpanded && (
         <div className="text-xs text-gray-500">
-          Click "Show USDC → SOL" to convert USDC amounts to SOL automatically
+          Click &quot;Show USDC → SOL&quot; to convert USDC amounts to SOL automatically
         </div>
       )}
     </div>
